@@ -2,9 +2,9 @@ package improvement;
 
 import static saving_system.Variables.*;
 
-public class TownHall_improvementImpl {
+public class TownHall_improvementImpl implements Improvement{
 
-    public static boolean checkTownHallReady(int lvl) {
+    public boolean checkTownHallReady(int lvl) {
         if (getTown_hall_lvl() >= getTown_hall_max_lvl()) {
             System.out.println("Max level of Town Hall!!!");
         } else {
@@ -28,7 +28,7 @@ public class TownHall_improvementImpl {
         return false;
     }
 
-    public static void improveTownHall() {
+    public void improveTownHall() {
         int lvl = getTown_hall_lvl();
         if (checkTownHallReady(lvl) == true) {
             setTown_hall_lvl(getTown_hall_lvl() + 1);
