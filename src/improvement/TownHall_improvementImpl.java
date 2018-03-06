@@ -13,15 +13,15 @@ public class TownHall_improvementImpl {
                     if (getIron() >= getTownHallLvlResourcesIron(lvl)) {
                         return true;
                     } else {
-                        System.out.println("Too less iron!");
+                        System.out.println("Too little iron!");
                         return false;
                     }
                 } else {
-                    System.out.println("Too less clay!");
+                    System.out.println("Too little clay!");
                     return false;
                 }
             } else {
-                System.out.println("Too less wood!");
+                System.out.println("Too little wood!");
                 return false;
             }
         }
@@ -36,8 +36,13 @@ public class TownHall_improvementImpl {
             setWood(getWood() - getTownHallLvlResourcesWood(lvl));
             setClay(getClay() - getTownHallLvlResourcesClay(lvl));
             setIron(getIron() - getTownHallLvlResourcesIron(lvl));
+
+            System.out.println("Town Hall level: "+getTown_hall_lvl());
+            System.out.println("Wood: "+getWood());
+            System.out.println("Clay: "+getClay());
+            System.out.println("Iron: "+getIron());
         } else {
-            System.out.println("Too less resources...");
+            System.out.println("Too little resources...");
         }
     }
 }

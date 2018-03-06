@@ -5,8 +5,8 @@ public class Variables {
     static int happy = 0;
 
     static int wood = 5000;
-    static int clay = 1500;
-    static int iron = 1000;
+    static int clay = 5000;
+    static int iron = 5000;
 
     static String username = "Gracz";
     static String villageName = "Wioska gracza " + username;
