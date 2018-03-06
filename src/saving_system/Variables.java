@@ -13,9 +13,9 @@ public class Variables {
 
     static int town_hall_lvl = 1;
     static final int town_hall_max_lvl = 30;
-    static final int[] TownHallLvlResourcesWood = {0, 50, 1000, 2000, 3000, 4000, 500, 6000};
-    static final int[] TownHallLvlResourcesClay = {0, 75, 0, 0, 0, 0, 0, 0};
-    static final int[] TownHallLvlResourcesIron = {0, 40, 0, 0, 0, 0, 0, 0};
+    static final int[] TownHallLvlResourcesWood = {0, 50, 0, 20, 300, 4, 50, 60, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9};
+    static final int[] TownHallLvlResourcesClay = {0, 75, 0, 0, 0, 0, 0, 50, 60, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9};
+    static final int[] TownHallLvlResourcesIron = {0, 40, 0, 0, 0, 0, 0, 50, 60, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9};
 
 
     public static int getHappy() {

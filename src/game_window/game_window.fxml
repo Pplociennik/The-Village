@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game_window.PleaseProvideControllerClassName">
+<AnchorPane fx:id="pane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseMoved="#showVillageName" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game_window.PleaseProvideControllerClassName">
    <children>
       <Button layoutX="129.0" layoutY="116.0" mnemonicParsing="false" onMouseClicked="#clickButton" text="Ulepsz Ratusz" />
+      <Label fx:id="villageName" layoutX="286.0" layoutY="14.0" onMouseMoved="#showVillageName" text="Label" />
+      <AnchorPane fx:id="pane2" disable="true" layoutX="10.0" layoutY="181.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="216.0" layoutY="158.0" prefHeight="84.0" prefWidth="169.0" text="asdfhgfadsdfg" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" />
    </children>
 </AnchorPane>
