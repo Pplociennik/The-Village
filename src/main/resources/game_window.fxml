@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game_window.Controller">
+   <children>
+      <AnchorPane fx:id="townHallPane" layoutX="236.0" layoutY="82.0">
+         <children>
+            <Button mnemonicParsing="false" onMouseClicked="#setPane2" text="Przejdz dalej" />
+            <Button mnemonicParsing="false" onMouseClicked="#clickTownHallImprovement" text="Ulepsz Ratusz" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane2" layoutX="198.0" layoutY="162.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="445.0">
+         <children>
+            <Button mnemonicParsing="false" text="Button" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
