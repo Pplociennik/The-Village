@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="The-Village-Game">
+    <output-path>$PROJECT_DIR$/out/artifacts/The_Village_Game</output-path>
+    <root id="root">
+      <element id="archive" name="The_Village_Game.jar">
+        <element id="module-output" name="The-Village-Game" />
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

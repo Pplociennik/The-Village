@@ -20,7 +20,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="The-Village-Game" target="" />
+      <module name="The-Village-Game" target="1.9" />
     </bytecodeTargetLevel>
   </component>
 </project>
