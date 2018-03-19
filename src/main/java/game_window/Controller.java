@@ -25,7 +25,7 @@ public class Controller {
 
     @FXML
     void clickTownHallImprovement(MouseEvent event) {
-        townHall.improve(storage);
+        townHall.checkAndImprove(storage);
     }
 
     @FXML
