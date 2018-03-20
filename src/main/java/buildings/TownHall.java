@@ -1,6 +1,6 @@
 package buildings;
 
-public class TownHall {
+public abstract class TownHall implements Building{
 
     //attributes
     int level = 1;
