@@ -1,10 +1,7 @@
 package buildings;
 
 public class Storage {
-    //attributes
-    int level = 1;
     final int maxLevel = 25;
-
     final int[] woodForLvl = {0, 50, 75, 126, 300, 450, 500, 60, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9};
     final int[] cobbleForLvl = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
     final int[] sandstoneForLvl = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
@@ -12,56 +9,39 @@ public class Storage {
     final int[] stoneForLvl = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
     final int[] whiteWoolForLvl = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
     final int[] dyedWoolForLvl = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-
     final double[] foodForLvl = {0, 0.20, 0.20, 0.35, 0.40, 0.40, 50, 60, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9};
-
-
-
-    double food = 2000;
     final double maxFood = 3.75;
-
-
-    int wood = 100000;
     final int maxWood = 1000;
-
-    int sandstone = 1500;
     final int maxSandstone = 1500;
-
-    int sand = 100;
     final int maxSand = 100;
-
-    int glass = 100;
     final int maxGlass = 100;
-
-    int coal = 25;
     final int maxCoal = 25;
-
-    int iron = 10;
     final int maxIron = 100;
-
-    int gold = 6;
-    final int maxGold  =100;
-
-    int diamond = 1;
+    final int maxGold = 100;
     final int maxDiamond = 20;
-
-    int dyers = 45;
     final int maxDyers = 125;
-
-    int whiteWool = 75;
     final int maxWhiteWool = 150;
-
-    int dyedWool = 75;
     final int maxDyedWool = 150;
-
-    int cobblestone = 250;
     final int maxCobblestone = 350;
-
-    int stone = 45;
     final int maxStone = 65;
+    //attributes
+    int level = 1;
+    double food = 2000;
+    int wood = 100000;
+    int sandstone = 1500;
+    int sand = 100;
+    int glass = 100;
+    int coal = 25;
+    int iron = 10;
+    int gold = 6;
+    int diamond = 1;
+    int dyers = 45;
+    int whiteWool = 75;
+    int dyedWool = 75;
+    int cobblestone = 250;
+    int stone = 45;
 
     //methods
-
 
     public int getLevel() {
         return level;

@@ -3,7 +3,7 @@ package player;
 public class Player {
     //attributes
     String userName = "Gracz";
-    String villageName = "Wioska gracza "+userName;
+    String villageName = "Wioska gracza " + userName;
 
     int storageLvl = 1;
     int townHallLvl = 1;
@@ -22,7 +22,6 @@ public class Player {
     int dyedWool = 0;
     int cobblestone = 0;
     int stone = 0;
-
 
 
     //methods

@@ -25,7 +25,7 @@ public class Loading {
         townHall.setLevel(player.getTownHallLvl());
     }
 
-    public static void Load(Player player, Storage storage, TownHall townHall)  {
+    public static void load(Player player, Storage storage, TownHall townHall) {
 
         //deserializacja do obietu player
 

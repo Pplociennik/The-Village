@@ -2,9 +2,26 @@ package saving_loading;
 
 import buildings.Storage;
 import buildings.TownHall;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.dataformat.xml.XmlMapper;
+import org.junit.jupiter.api.Test;
 import player.Player;
 
+import java.io.File;
+import java.io.IOException;
+
 public class Saving {
+
+    @Test
+    public static void whenJavaSerializedToXmlStr_thenCorrect(Player player) throws JsonProcessingException {
+
+        XmlMapper xmlMapper = new XmlMapper();
+        try {
+            xmlMapper.writeValue(new File("XML.xml"), player);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     static void transfer_out(Player player, Storage storage, TownHall townHall)  {
         player.setDyedWool(storage.getDyedWool());
@@ -25,10 +42,10 @@ public class Saving {
         player.setTownHallLvl(townHall.getLevel());
     }
 
-    public static void Save(Player player, Storage storage, TownHall townHall) {
+    public static void save(Player player, Storage storage, TownHall townHall) throws JsonProcessingException {
 
         transfer_out(player, storage, townHall);
 
-        //serializacja obiektu player
+        whenJavaSerializedToXmlStr_thenCorrect(player);
     }
 }

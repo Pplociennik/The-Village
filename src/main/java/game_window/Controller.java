@@ -5,13 +5,16 @@ package game_window;
 
 import buildings.Storage;
 import buildings.TownHall;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import player.Player;
+import saving_loading.Saving;
 
-public class Controller {
+
+public class Controller extends Saving {
 
     Player player = new Player();
     TownHall townHall = new TownHall();
@@ -37,6 +40,11 @@ public class Controller {
     @FXML
     void clickImproveStorage(MouseEvent event)  {
         storage.checkAndImprove();
+        try {
+            save(player, storage, townHall);
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
