@@ -1,6 +1,6 @@
 package buildings;
 
-public abstract class TownHall implements Building{
+public class TownHall {
 
     //attributes
     int level = 1;
@@ -18,6 +18,19 @@ public abstract class TownHall implements Building{
 
 
     //methods
+
+    public int getLevel() {
+        return level;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
+    }
+
+    public int getMaxLevel() {
+        return maxLevel;
+    }
+
     public void improve(Storage storage) {
         level++;
         storage.setWood((storage.getWood() - woodForLvl[level - 1]));

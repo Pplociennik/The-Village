@@ -1,6 +1,6 @@
 package buildings;
 
-public abstract class Storage implements Building{
+public class Storage {
     //attributes
     int level = 1;
     final int maxLevel = 25;

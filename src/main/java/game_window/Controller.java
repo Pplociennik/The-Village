@@ -9,9 +9,11 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import player.Player;
 
 public class Controller {
 
+    Player player = new Player();
     TownHall townHall = new TownHall();
     Storage storage = new Storage();
 
